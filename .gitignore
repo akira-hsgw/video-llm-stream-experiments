@@ -1,0 +1,67 @@
+__pycache__/
+*.pyc
+*.pyo
+.claude/
+
+# Local datasets and generated artifacts
+data/
+results/
+main_experiments/results/
+efficiency/result/
+efficiency/video/
+
+# Logs and temporary run state
+*.log
+*.jsonl
+done
+offload/
+
+# Local media
+*.mp4
+*.mov
+*.avi
+
+
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.ipynb_checkpoints/
+
+# Conda / env
+.env
+.venv/
+venv/
+*.egg-info/
+
+# Large data
+data/
+*.tar
+*.zip
+*.mp4
+*.avi
+*.mov
+*.mkv
+*.webm
+
+# Model/cache
+.cache/
+huggingface/
+checkpoints/
+models/
+*.pt
+*.pth
+*.ckpt
+*.safetensors
+*.bin
+
+# Results / logs
+main_experiments/results/
+results/
+logs/
+wandb/
+runs/
+
+# System
+.DS_Store
