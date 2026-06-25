@@ -54,6 +54,7 @@ class RecentWindowQAModel(_BaseRecentWindowQAModel):
 
         saved_world_size = os.environ.pop("WORLD_SIZE", None)
         try:
+            model_kwargs["attn_implementation"] = "sdpa"
             self.model = AutoModelForImageTextToText.from_pretrained(model_name, **model_kwargs)
         finally:
             if saved_world_size is not None:
